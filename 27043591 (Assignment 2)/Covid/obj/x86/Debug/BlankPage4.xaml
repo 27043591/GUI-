@@ -1,0 +1,63 @@
+﻿<Page
+    x:Class="Covid19.BlankPage4"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Covid19"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+
+    <ScrollViewer>
+
+
+
+        <StackPanel>
+
+
+            <TextBlock x:ConnectionId='2' x:Name ="tt" Text="Meals for Covid 19" TextWrapping="Wrap" Width="Auto"  Padding="10" VerticalAlignment="Center" HorizontalAlignment="Center" FontStyle="Normal" FontWeight="ExtraBlack" Margin="50,10,10,10" FontSize="20" TextAlignment="Center">
+          </TextBlock>
+
+            <Image x:ConnectionId='3'  x:Name ="im1" Source="/Assets/meals.jpg" Height="Auto"  Width="Auto" HorizontalAlignment="Center"  Margin="50,40,50,40"/>
+
+
+            <TextBlock x:ConnectionId='4' x:Name ="tt1" Text="" TextWrapping="Wrap" Margin="50,10,50,0" FontSize="16" TextAlignment="Justify" HorizontalAlignment="Center" VerticalAlignment="Center"  Width="Auto">
+         <LineBreak/> 1. Keep up fruit and vegetable intake<LineBreak/>
+<LineBreak/>Purchasing, storing and cooking fresh vegetables can be challenging in a lockdown, especially when parents are advised to limit trips outside of the home. But wherever possible, it’s important to ensure children are still getting plenty of fruit and vegetables in their diet.
+Whenever it is possible to get hold of fresh produce, do so. As well as being eaten fresh, fruits and vegetables can be frozen where possible and will retain most of their nutrients and flavor. Using fresh vegetables to cook large batches of soups, stews or other dishes will make them last longer and provide meal options for a few days. These can also be frozen where possible and then quickly reheated.
+
+<LineBreak/><LineBreak/>
+2. Swap in healthy dried or canned alternatives when fresh produce is not available<LineBreak/>
+Fresh produce is almost always the best option, but when it is not available there are plenty of healthy alternatives that are easy to store and prepare.
+
+Canned beans and chickpeas, which provide an abundance of nutrients, can be stored for months or even years, and can be included in meals in many ways. Canned oily fish such as sardines, mackerel and salmon are rich in protein, omega 3 fatty acids and a range of vitamins and minerals. These can be used cold in sandwiches, salads or pasta dishes, or cooked as part of a warm meal.
+
+Canned vegetables, such as tomatoes, do tend to contain lower quantities of vitamins than fresh produce, but they are a great fallback option when fresh produce or frozen vegetables are hard to come by. 
+ 
+Dried goods like dried beans, pulses and grains such as lentils, split peas, rice, couscous or quinoa are also nutritious, long-lasting options that are tasty, affordable and filling. Rolled oats cooked with milk or water can serve as an excellent breakfast option, and can be spiced up with yoghurt, chopped fruits or raisins. 
+
+<LineBreak/><LineBreak/>
+3. Build up a stock of healthy snacks<LineBreak/>
+Children often need to eat a snack or two during the day to keep them going. Rather than giving kids sweets or salty snacks, opt for healthier options like nuts, cheese, yoghurt (preferably unsweetened), chopped or dried fruits, boiled eggs, or other locally available healthy options. These foods are nutritious, more filling, and help build healthy eating habits that last a lifetime. 
+
+<LineBreak/><LineBreak/>
+4. Limit highly processed foods <LineBreak/>
+While using fresh produce may not always be possible, try to limit the amount of highly processed foods in your shopping basket. Ready-to-eat meals, packaged snacks and desserts are often high in saturated fat, sugars and salt. If you do purchase processed foods, look at the label and try to choose healthier options containing less of these substances. Try to also avoid sugary drinks and instead drink lots of water. Adding fruits or vegetables like lemon, lime, cucumber slices or berries to water is a great way to add an extra twist of flavor.
+<LineBreak/>
+<LineBreak/>
+5. Make cooking and eating a fun and meaningful part of your family routine<LineBreak/>
+Cooking and eating together is a great way to create healthy routines, strengthen family bonds and have fun. Wherever you can, involve your children in food preparation – small children can help with washing or sorting food items while older children can take on more complex tasks and help to set the table. 
+ 
+Try as much as possible to stick to fixed mealtimes as a family. Such structures and routine can help reduce anxiety for children in these stressf
+         <LineBreak/><LineBreak/>
+            </TextBlock>
+
+           
+
+
+        </StackPanel>
+
+    </ScrollViewer>
+
+</Page>
+

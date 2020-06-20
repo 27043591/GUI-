@@ -1,0 +1,86 @@
+﻿<Page x:ConnectionId='1'
+    x:Class="News.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:News"
+    xmlns:c="using:News.Controls"
+    xmlns:h="using:News.Helpers"
+    xmlns:composition="using:News.Helpers.Composition"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="Transparent">
+
+    <Grid x:ConnectionId='2' x:Name="RootElement">
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="185"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <ListView x:ConnectionId='3' Name="SectionList" 
+                  Margin="60,110, 0, 0" SelectionMode="Single" 
+                                                ItemContainerStyle="{StaticResource ListViewItemExpanded}" 
+                                                    
+                                                  
+                                                   >
+            <ListView.ItemTemplate>
+                <DataTemplate                      >
+                    <TextBlock x:ConnectionId='22'                 FontSize="13" FontWeight="Light"></TextBlock>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+
+        <Border HorizontalAlignment="Right" VerticalAlignment="Stretch" Margin="0,110" BorderBrush="White" BorderThickness="0,0,1,0" Opacity="0.1"></Border>
+
+        <c:Timeline x:ConnectionId='4' x:Name="Timeline"                              Grid.Column="1"
+                                                                                  
+                                                                               
+                    Opacity="0.6">
+            <c:Timeline.ItemTemplate>
+                <DataTemplate                            xmlns:data="using:News.Data">
+                    <c:TimelineItem x:ConnectionId='8'                                                                                     >
+                        <c:TimelineStory x:ConnectionId='9'                 Margin="0,20,0,20" Width="750"></c:TimelineStory>
+                    </c:TimelineItem>
+                </DataTemplate>
+            </c:Timeline.ItemTemplate>
+            <c:Timeline.HeaderContent>
+                <c:TimelineItem x:ConnectionId='10'                                                                                        >
+                    <StackPanel x:ConnectionId='11' Name="HeaderRoot" MaxWidth="430"  Margin="0,0,0, -40">
+                        <TextBlock x:ConnectionId='12' Name="HeaderDate" HorizontalAlignment="Center" FontSize="24"></TextBlock>
+                        <TextBlock x:ConnectionId='13' Name="HeaderTime" HorizontalAlignment="Center" FontSize="15" Margin="0,5,0,15"></TextBlock>
+                        <Grid x:ConnectionId='14' Name="HeaderImageContainer" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Center" Height="68" Width="68">
+                            <Ellipse StrokeThickness="1" Stroke="#97FFFFFF" Height="68" Width="68"/>
+                            <composition:CompositionShadow x:ConnectionId='19' x:Name="Shadow" Color="Black" OffsetX="0" OffsetY="0" ShadowOpacity="0.5" BlurRadius="30">
+                                <composition:CompositionImage x:ConnectionId='20' x:Name="HeroStoryImage"                                  Height="55" Width="55" Stretch="UniformToFill"></composition:CompositionImage>
+                            </composition:CompositionShadow>
+                        </Grid>
+                        <TextBlock x:ConnectionId='15' Name="HeaderTitle"                            TextAlignment="Center" Margin="0,25,0,15" FontSize="18"></TextBlock>
+                        <TextBlock x:ConnectionId='16' Name="HeaderSummary"                              MaxWidth="430" TextWrapping="WrapWholeWords" TextAlignment="Center" FontSize="15" MaxLines="4" TextLineBounds="TrimToBaseline" ></TextBlock>
+                        <StackPanel x:ConnectionId='17' Name="HeaderLikes" Grid.Row="3" Orientation="Horizontal" Margin="0,20,0,0" HorizontalAlignment="Center">
+                            <TextBlock FontFamily="Segoe MDL2 Assets" FontSize="15" VerticalAlignment="Center" ></TextBlock>
+                            <TextBlock FontFamily="Segoe MDL2 Assets" FontSize="15" VerticalAlignment="Center" Margin="10,0,4,0"></TextBlock>
+                            <TextBlock x:ConnectionId='18' FontSize="12" VerticalAlignment="Center" Margin="0,7,0,0"                           ></TextBlock>
+                        </StackPanel>
+                    </StackPanel>
+                </c:TimelineItem>
+            </c:Timeline.HeaderContent>
+        </c:Timeline>
+
+        <Image Source="Assets/logo.png" Height="40" Width="40" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="60,30"></Image>
+
+        <Grid Grid.Column="1" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,30,40,0" Height="35" Width="35" Visibility="Collapsed">
+            <Ellipse  Fill="#19FFFFFF"></Ellipse>
+            <TextBlock FontFamily="Segoe MDL2 Assets" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="#A3FFFFFF"></TextBlock>
+        </Grid>
+
+        <Grid Grid.Column="1" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="60,30">
+            <StackPanel Orientation="Horizontal">
+                <TextBlock x:ConnectionId='5' Name="WeatherIcon" Opacity="0.4" FontFamily="Segoe MDL2 Assets" FontSize="18" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="#A3FFFFFF"></TextBlock>
+                <TextBlock x:ConnectionId='6' Name="CornerClock" FontSize="15" Margin="10,0,0,0" Foreground="#CCFFFFFF"></TextBlock>
+            </StackPanel>
+        </Grid>
+
+    </Grid>
+</Page>
+

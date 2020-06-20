@@ -1,0 +1,8 @@
+AlternateForm=UNPLATED
+DeviceFamily=XBOX
+Scale=200
+Scale=400
+Scale=150
+Scale=125
+Scale=100
+TargetSize=24

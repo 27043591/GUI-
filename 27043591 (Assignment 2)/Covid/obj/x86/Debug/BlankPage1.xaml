@@ -1,0 +1,41 @@
+﻿<Page
+    x:Class="Covid19.BlankPage1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Covid19"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d" 
+    >
+
+    <ScrollViewer>
+
+
+
+        <RelativePanel>
+
+
+            <TextBlock x:ConnectionId='2' x:Name ="tt" Text="Symptoms of Covid 19" TextWrapping="Wrap" Width="Auto"  Padding="10" VerticalAlignment="Center" HorizontalAlignment="Center" FontStyle="Normal" FontWeight="ExtraBlack" Margin="50,10,10,10" FontSize="20" TextAlignment="Center">
+            </TextBlock>
+
+            <TextBlock x:ConnectionId='3' x:Name ="tt1" RelativePanel.Below="tt" Text="" TextWrapping="Wrap" Margin="50,10,50,0" FontSize="16" TextAlignment="Justify" HorizontalAlignment="Center" VerticalAlignment="Center"  Width="Auto">
+            COVID-19 affects different people in different ways. Most infected people will develop mild to moderate illness and recover without hospitalization
+                Most common symptoms are fever, dry cough, tiredness. Less common symptoms are aches and pains, sore throat, diarrhoea, conjunctivitis, headach, loss of taste or smell, a rash on skin, or discolouration of fingers or toes.
+Serious symptoms are difficulty breathing or shortness of breath, chest pain or pressure, loss of speech or movement.
+            </TextBlock>
+
+            <Image x:ConnectionId='4'  x:Name ="im1" RelativePanel.Below="tt1" Source="/Assets/fever.png" Height="190"  Width="Auto" HorizontalAlignment="Left"  Margin="50,10,0,0"/>
+            <Image x:ConnectionId='5'  x:Name ="im2" RelativePanel.Below="tt3"   Source="/Assets/coughing.png" Height="190" Width="Auto" HorizontalAlignment="Center" Margin="50,10,0,0"/>
+            <Image x:ConnectionId='6'  x:Name ="im3" RelativePanel.Below="tt4"    Source="/Assets/nose.png" Height="190" Width="Auto" HorizontalAlignment="Right" Margin="50,10,0,0"/>
+            <TextBlock x:ConnectionId='7'  x:Name ="tt2" RelativePanel.Below="im3" Height="Auto" Width="Auto" Margin="100,30,0,30" Text="Running Nose" TextWrapping="Wrap" TextAlignment="Center"/>
+
+            <TextBlock x:ConnectionId='8'  x:Name ="tt3" RelativePanel.Below="im1" Margin="100,30,0,30" Text="Fever" Width="Auto" Height="Auto" TextWrapping="Wrap" TextAlignment="Center"/>
+            <TextBlock x:ConnectionId='9'  x:Name ="tt4" RelativePanel.Below="im2"  Width="Auto" Height="Auto" Margin="100,30,0,30" Text="Coughing" TextWrapping="Wrap" TextAlignment="Center"/>
+
+           
+
+        </RelativePanel>
+
+    </ScrollViewer>
+</Page>
+
